@@ -21,7 +21,7 @@ import com.example.moviesandseries.common.adapters.TvShowAdapter
 import com.example.moviesandseries.common.models.TvShow
 import com.example.moviesandseries.databinding.SearchFragmentLayoutBinding
 import com.example.moviesandseries.di.components.FragmentSubComponent
-import com.example.moviesandseries.network.UiState
+import com.example.moviesandseries.common.models.UiState
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay

@@ -10,7 +10,7 @@ import com.example.moviesandseries.common.dto.BasePaginatedResponse
 import com.example.moviesandseries.common.dto.TvShowDto
 import com.example.moviesandseries.common.models.TvShow
 import com.example.moviesandseries.network.Resource
-import com.example.moviesandseries.network.UiState
+import com.example.moviesandseries.common.models.UiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
