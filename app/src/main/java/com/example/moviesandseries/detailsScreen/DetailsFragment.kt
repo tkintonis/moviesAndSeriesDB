@@ -160,11 +160,11 @@ class DetailsFragment : BottomSheetDialogFragment() {
             return
         }
 
-        if (type == ShowType.SERIES) {
-            typeText.setTextColor(ResourcesCompat.getColor(resources, R.color.marsDark, null))
-            typeText.setBackgroundColor(ResourcesCompat.getColor(resources, R.color.white, null))
+        with(typeText) {
+            setTextColor(ResourcesCompat.getColor(resources, type.textColour, null))
+            setBackgroundColor(ResourcesCompat.getColor(resources, type.containerColour, null))
+            text = resources.getString(type.typeText)
         }
-        typeText.text = resources.getString(type.typeText)
         typeContainer.show()
     }
 }
