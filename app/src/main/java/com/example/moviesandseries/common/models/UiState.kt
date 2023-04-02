@@ -1,4 +1,4 @@
-package com.example.moviesandseries.network
+package com.example.moviesandseries.common.models
 
 sealed class UiState<out T>{
     data class Success<T>(val data: T?) : UiState<T>()
