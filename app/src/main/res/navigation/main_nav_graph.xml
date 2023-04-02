@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.moviesandseries.searchScreen.SearchFragment">
+
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+
+        <action
+            android:id="@+id/action_searchFragment_to_favouritesFragment"
+            app:destination="@id/favouritesFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/detailsFragment"
+        android:name="com.example.moviesandseries.detailsScreen.DetailsFragment">
+
+        <argument
+            android:name="tvShow"
+            app:argType="com.example.moviesandseries.common.models.TvShow" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.moviesandseries.favouritesScreen.FavouritesFragment">
+        <action
+            android:id="@+id/action_favouritesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>

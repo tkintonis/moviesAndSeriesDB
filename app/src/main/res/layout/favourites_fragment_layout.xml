@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/g900">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/g900"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/watchlist_fragment_title">
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_12dp"
+            android:src="@drawable/ic_search" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/g700"
+        android:visibility="gone"
+        app:iconifiedByDefault="false"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="@string/search_favourite_hint"
+        app:searchIcon="@null" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favouritesRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/g900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        tools:listitem="@layout/tvshow_list_item_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
