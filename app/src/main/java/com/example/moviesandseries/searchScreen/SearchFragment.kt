@@ -111,7 +111,7 @@ class SearchFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = SearchFragmentLayoutBinding.inflate(layoutInflater)
+        binding = SearchFragmentLayoutBinding.inflate(inflater)
         return binding?.root
     }
 
