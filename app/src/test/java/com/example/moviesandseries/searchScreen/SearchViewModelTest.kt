@@ -6,7 +6,7 @@ import com.example.moviesandseries.common.dto.TvShowDto
 import com.example.moviesandseries.common.enums.ShowType
 import com.example.moviesandseries.common.models.TvShow
 import com.example.moviesandseries.network.Resource
-import com.example.moviesandseries.common.models.UiState
+import com.example.moviesandseries.network.UiState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.toList
@@ -22,11 +22,13 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mockito
 import org.mockito.kotlin.any
+import org.mockito.kotlin.never
 import org.mockito.kotlin.times
 import org.mockito.kotlin.verify
 import org.powermock.api.mockito.PowerMockito
 import org.powermock.core.classloader.annotations.PrepareForTest
 import org.powermock.modules.junit4.PowerMockRunner
+import kotlin.math.sign
 
 @RunWith(PowerMockRunner::class)
 @OptIn(ExperimentalCoroutinesApi::class)

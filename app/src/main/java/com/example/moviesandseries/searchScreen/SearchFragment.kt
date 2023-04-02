@@ -21,7 +21,7 @@ import com.example.moviesandseries.common.adapters.TvShowAdapter
 import com.example.moviesandseries.common.models.TvShow
 import com.example.moviesandseries.databinding.SearchFragmentLayoutBinding
 import com.example.moviesandseries.di.components.FragmentSubComponent
-import com.example.moviesandseries.common.models.UiState
+import com.example.moviesandseries.network.UiState
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
@@ -111,7 +111,7 @@ class SearchFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = SearchFragmentLayoutBinding.inflate(inflater)
+        binding = SearchFragmentLayoutBinding.inflate(layoutInflater)
         return binding?.root
     }
 
