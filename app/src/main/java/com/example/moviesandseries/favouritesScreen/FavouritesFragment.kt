@@ -15,8 +15,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.moviesandseries.activities.main.MainActivity
 import com.example.moviesandseries.activities.main.MainViewModel
-import com.example.moviesandseries.common.*
 import com.example.moviesandseries.common.adapters.TvShowAdapter
+import com.example.moviesandseries.common.helpers.*
 import com.example.moviesandseries.common.models.TvShow
 import com.example.moviesandseries.databinding.FavouritesFragmentLayoutBinding
 import com.example.moviesandseries.di.components.FragmentSubComponent

@@ -1,4 +1,4 @@
-package com.example.moviesandseries.common
+package com.example.moviesandseries.common.helpers
 
 import android.content.Context
 import android.content.res.Resources

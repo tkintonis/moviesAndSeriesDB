@@ -19,6 +19,9 @@ import com.example.moviesandseries.activities.main.MainViewModel
 import com.example.moviesandseries.common.*
 import com.example.moviesandseries.common.constants.Constants
 import com.example.moviesandseries.common.enums.ShowType
+import com.example.moviesandseries.common.helpers.hide
+import com.example.moviesandseries.common.helpers.repeatWithLifecycle
+import com.example.moviesandseries.common.helpers.show
 import com.example.moviesandseries.common.models.TvShow
 import com.example.moviesandseries.databinding.DetailsFragmentLayoutBinding
 import com.example.moviesandseries.di.components.FragmentSubComponent

@@ -8,9 +8,9 @@ import com.bumptech.glide.Glide
 import com.example.moviesandseries.R
 import com.example.moviesandseries.common.constants.Constants
 import com.example.moviesandseries.common.enums.ShowType
-import com.example.moviesandseries.common.hide
+import com.example.moviesandseries.common.helpers.hide
 import com.example.moviesandseries.common.models.TvShow
-import com.example.moviesandseries.common.show
+import com.example.moviesandseries.common.helpers.show
 import com.example.moviesandseries.databinding.TvshowListItemLayoutBinding
 
 class TvShowViewHolder(
